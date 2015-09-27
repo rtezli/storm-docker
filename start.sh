@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exec "./welcome.sh"
+source "./welcome.sh"
 
 if [ "$1" == "master" ]; then
     zkServer.sh start-foreground
@@ -16,4 +16,4 @@ else
     exec "$@"
 fi
 
-exec "bash"
+# exec "bash"
